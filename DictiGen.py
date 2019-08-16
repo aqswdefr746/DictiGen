@@ -24,10 +24,10 @@ str4 =input('Введите какие спецсимволы будут исп�
 str5 = str1 + str2 + str3 + str4
 k =input('Введите длинну паролей:')
 k =int(k)
-store =input('Выберите путь для сохранения словаря(без названия файла):')
+store =os.getcwd()
 if not os.path.exists(store):
     os.makedirs(store)
-f = open(store+'.txt', 'a')
+f = open('dict.txt', 'a')
 for i in range(0, 99):
     ls = list(str5)
     random.shuffle(ls)
