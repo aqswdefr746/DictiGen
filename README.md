@@ -1,0 +1,2 @@
+# DictiGen
+Generator of dictionaries
